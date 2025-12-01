@@ -1,0 +1,8 @@
+Right
+Stop+Right
+Stop+Left
+Left
+Accelerate
+Stop
+Acc+Left
+Acc+Right

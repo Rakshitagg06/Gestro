@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.racingcargame.app-mergeDebugResources-67:/layout/activity_config.xml",
+        "source": "com.example.racingcargame.app-main-70:/layout/activity_config.xml"
+    },
+    {
+        "merged": "com.example.racingcargame.app-mergeDebugResources-67:/layout/activity_main.xml",
+        "source": "com.example.racingcargame.app-main-70:/layout/activity_main.xml"
+    }
+]
