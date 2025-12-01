@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!-- Game view takes full screen -->
+        <com.example.racingcargame.GameView
+            android:id="@+id/gameView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Camera preview small at top-right corner -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_margin="16dp"
+            android:background="#80000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Speed display -->
+        <TextView
+            android:id="@+id/speedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed: 0 km/h"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="#80000000"
+            android:padding="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Result text (gesture label) -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="#80000000"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/speedText"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Left button -->
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="⬅️"
+            android:textSize="32sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Right button -->
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="➡️"
+            android:textSize="32sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Brake button -->
+        <Button
+            android:id="@+id/btnDecelerate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Brake"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnLeft"/>
+
+        <!-- Gas button -->
+        <Button
+            android:id="@+id/btnAccelerate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Accelerate"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnRight"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

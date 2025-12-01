@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.racingcargame.app-mergeDebugResources-66:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/navneet/.gradle/caches/8.13/transforms/1f122351456fe6de3717ba6c5450a241/transformed/appcompat-1.7.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

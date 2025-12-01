@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".ConfigActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Configuration"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Model Delegate"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDelegate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioCpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPU"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioGpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPU"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioNpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NPU (Default)"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioQnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NPU (Qualcomm)"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Camera"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioFrontCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Front Camera"
+            android:checked="true"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioBackCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back Camera"/>
+    </RadioGroup>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchFlipCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flip Camera Image (for QIDK)"
+        android:textSize="16sp"
+        android:checked="true"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+        android:text="Start Game" />
+
+</LinearLayout>
