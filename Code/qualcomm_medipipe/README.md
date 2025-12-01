@@ -12,6 +12,12 @@ This module provides:
 
 The implementation uses MediaPipe's hand detection pipeline adapted for TensorFlow Lite inference, making it suitable for deployment on edge devices including Qualcomm AI Development Kit (QIDK).
 
+### Hand Control Mapping
+
+> 🎮 **Gesture Controls**:
+> - **Left Hand**: Used for **directional controls** (Left / Right navigation)
+> - **Right Hand**: Used for **speed controls** (Accelerate / Decelerate)
+
 ## Project Structure
 
 ```
