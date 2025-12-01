@@ -1,0 +1,56 @@
+{
+  "total_images": 64075,
+  "processed": 44938,
+  "skipped": 19137,
+  "correct": 36500,
+  "per_gesture": {
+    "Acc+Left": {
+      "images": 1854,
+      "processed": 1628,
+      "correct": 1257,
+      "skipped": 226
+    },
+    "Acc+Right": {
+      "images": 5420,
+      "processed": 4384,
+      "correct": 3512,
+      "skipped": 1036
+    },
+    "Accelerate": {
+      "images": 8950,
+      "processed": 6635,
+      "correct": 6384,
+      "skipped": 2315
+    },
+    "Left": {
+      "images": 8544,
+      "processed": 5685,
+      "correct": 4857,
+      "skipped": 2859
+    },
+    "Right": {
+      "images": 8691,
+      "processed": 4919,
+      "correct": 4613,
+      "skipped": 3772
+    },
+    "Stop": {
+      "images": 9999,
+      "processed": 6777,
+      "correct": 5069,
+      "skipped": 3222
+    },
+    "Stop+Left": {
+      "images": 10671,
+      "processed": 7759,
+      "correct": 6045,
+      "skipped": 2912
+    },
+    "Stop+Right": {
+      "images": 9946,
+      "processed": 7151,
+      "correct": 4763,
+      "skipped": 2795
+    }
+  }
+}
