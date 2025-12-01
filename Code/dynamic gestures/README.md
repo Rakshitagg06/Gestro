@@ -224,10 +224,6 @@ If you use this code, please cite the HaGRID dataset:
 }
 ```
 
-## Known Limitations
-
-> ⚠️ **Note**: Due to time constraints, this module could not be fully implemented and tested. Some features may be incomplete or require additional development work for production use.
-
 ## References
 
 - [HaGRID GitHub Repository](https://github.com/hukenovs/hagrid)

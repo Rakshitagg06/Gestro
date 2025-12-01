@@ -1,6 +1,15 @@
 # Gesture Classification Code Guide
 
+> ⚠️ **Important**: This module uses **Google's MediaPipe library** for hand landmark detection. MediaPipe provides the 21-point hand skeleton that serves as input features for the gesture classification model.
+
 This folder contains everything needed to capture hand-gesture data, train a classifier on Mediapipe landmarks, export the model to TensorFlow Lite, and benchmark it on recorded datasets or live hardware. The sections below walk through every script and explain how they fit into the pipeline.
+
+### Hand Control Mapping
+
+> 🎮 **Gesture Controls**:
+> - **Left Hand**: Used for **speed controls** (Accelerate / Decelerate navigation)
+> - **Right Hand**: Used for **directional controls** (Right / Left)
+
 
 ## Directory Layout
 - `classification_model/`
