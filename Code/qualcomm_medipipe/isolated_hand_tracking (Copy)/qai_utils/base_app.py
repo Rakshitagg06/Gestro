@@ -405,7 +405,6 @@ class MediaPipeApp(BaseCollectionApp):
 
                     boxes_list.append(selected_coords_[:, :2])
                     kps_list.append(selected_coords_[:, 2:])
-                    break
 
                 if boxes_list:
                     selected_boxes.append(torch.cat(boxes_list, dim=0))
